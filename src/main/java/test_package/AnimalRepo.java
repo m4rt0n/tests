@@ -1,6 +1,6 @@
 package test_package;
 
-public class AnimalRepo {
+public class AnimalRepo implements IAnimalRepo{
 
 		public String getAnimal(Animal a) {
 			return a.speak();
