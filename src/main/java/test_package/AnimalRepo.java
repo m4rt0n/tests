@@ -14,6 +14,16 @@ public class AnimalRepo implements IAnimalRepo{
 			return c.speak();
 		}
 		
+		public String getGender(int gender) {
+			if (gender == 1) {
+				return "male";
+			}
+			if (gender == 2) {
+				return "female";
+			} else {
+				return "other";
+			}
+		}
 	}
 
 	

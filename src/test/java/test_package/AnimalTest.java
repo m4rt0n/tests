@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 class AnimalTest {
 	
-private IAnimalRepo ar = new AnimalRepo();
+private IAnimalRepo ar;
 
 @BeforeEach
 public void before() {
