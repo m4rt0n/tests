@@ -14,7 +14,7 @@ public class AnimalRepo implements IAnimalRepo{
 			return c.speak();
 		}
 		
-		public String getGender(int gender) {
+		public String checkGender(int gender) {
 			if (gender == 1) {
 				return "male";
 			}
@@ -24,6 +24,23 @@ public class AnimalRepo implements IAnimalRepo{
 				return "other";
 			}
 		}
+		
+		public String checkAge(int age) {
+			if (age<10) {
+				return "young";
+			}if(age<10 || age<50) {
+				return "adult";
+			}if(age>100){
+				return "old";
+			}else return "wrong age";				
+		}
+		
+		public String checkName(String name) {
+			if (name.length()<10) {
+				return "short";
+			}else return "long";
+		}
+
 	}
 
 	

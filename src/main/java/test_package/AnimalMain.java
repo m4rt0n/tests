@@ -19,7 +19,7 @@ System.out.println("xxx");
 		ar.getAnimal(a);
 		ar.getDog(d);
 		ar.getCat(c);
-		ar.getGender(turtle.getAge());
+		ar.checkGender(turtle.getGender());
 		
 	}
 }
