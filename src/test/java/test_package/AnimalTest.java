@@ -34,5 +34,26 @@ public void isCat(){
 	String catMessage = ar.getCat(c);
 	assertEquals("cat says: meow!", catMessage);
 }
+@Test
+public void isMale() {
+	Reptile r = new Reptile(1, 1, "reptileName");
+	String maleMessage = ar.getGender(r.getGender());
+	assertEquals("male", maleMessage);
+}
+
+@Test
+public void isFemale() {
+	Reptile r = new Reptile(2, 1, "reptileName");
+	String femaleMessage = ar.getGender(r.getGender());
+	assertEquals("female", femaleMessage);
+}
+
+@Test
+public void isOther() {
+	Reptile r = new Reptile(3, 1, "reptileName");
+	String otherMessage = ar.getGender(r.getGender());
+	assertEquals("other", otherMessage);
+}
+
 }
 

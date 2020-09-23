@@ -3,7 +3,7 @@ package test_package;
 public class AnimalMain {
 	 
 	public static void main(String[] args) {
-
+System.out.println("xxx");
 		IAnimalRepo ar = new AnimalRepo();
 
 		 Animal a = new Animal();
